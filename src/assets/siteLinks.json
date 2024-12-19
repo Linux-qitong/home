@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "Blog",
+    "name": "博客",
+    "link": "https://blog.linux-qitong.top/"
+  },
+  {
+    "icon": "Train",
+    "name": "志海融新",
+    "link": "https://pan.imsyy.top/"
+  },
+  {
+    "icon": "Star",
+    "name": "觅知园",
+    "link": "https://music.imsyy.top/"
+  },
+  {
+    "icon": "Book",
+    "name": "教程站",
+    "link": "https://nav.imsyy.top/"
+  }
+]
