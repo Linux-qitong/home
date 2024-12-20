@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Github",
+    "icon": "/images/icon/github.avif",
+    "tip": "去 Github 看看",
+    "url": "https://github.com/linux-qitong"
+  },
+  {
+    "name": "Gitee",
+    "icon": "/images/icon/gitee.avif",
+    "tip": "去 Gitee 看看",
+    "url": "https://gitee.com/linux-qitong"
+  },
+  {
+    "name": "BiliBili",
+    "icon": "/images/icon/bilibili.avif",
+    "tip": "(゜-゜)つロ 干杯 ~",
+    "url": "https://space.bilibili.com/486352915"
+  },
+  {
+    "name": "Email",
+    "icon": "/images/icon/email.avif",
+    "tip": "来封 Email ~",
+    "url": "mailto:sweetcandymini@foxmail.com"
+  }
+]

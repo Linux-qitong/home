@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "Blog",
+    "name": "博客",
+    "link": "https://blog.linux-qitong.top/"
+  },
+  {
+    "icon": "Train",
+    "name": "志海融新",
+    "link": "https://www.zen-harmony.top/"
+  },
+  {
+    "icon": "Star",
+    "name": "觅知园",
+    "link": "https://doc.zen-harmony.top/"
+  },
+  {
+    "icon": "Book",
+    "name": "教程站",
+    "link": "https://tutorial.zen-harmony.top/"
+  }
+]
