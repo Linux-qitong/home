@@ -12,7 +12,7 @@
     <div :class="store.backgroundShow ? 'gray hidden' : 'gray'" />
     <Transition name="fade" mode="out-in">
       <a
-        v-if="store.backgroundShow && store.coverType != '1'"
+        v-if="store.backgroundShow && store.coverType != '3'"
         class="down"
         :href="bgUrl"
         target="_blank"
