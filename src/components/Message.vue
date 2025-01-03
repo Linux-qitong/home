@@ -6,7 +6,6 @@
       <img class="logo-img" :src="siteLogo" alt="logo" />
       <div :class="{ name: true, 'text-hidden': true, long: siteUrl[0].length >= 6 }">
         <span class="bg">{{ siteUrl[0] }}</span>
-        <span class="sm">.{{ siteUrl[1] }}</span>
       </div>
     </div>
     <!-- 简介 -->
@@ -43,7 +42,6 @@ const siteUrl = computed(() => {
   // 判断协议前缀
   if (url.startsWith("http://") || url.startsWith("https://")) {
     const urlFormat = url.replace(/^(https?:\/\/)/, "");
-    return urlFormat.split(".");
   }
   return url.split(".");
 });
