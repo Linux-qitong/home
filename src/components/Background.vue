@@ -40,7 +40,7 @@ const bgRandom = Math.floor(Math.random() * 10 + 1);
 const changeBg = (type) => {
   
   if (type === "0") {
-    bgUrl.value = `/images/background${bgRandom}.avif`;
+    bgUrl.value = `/images/background${bgRandom}.webp`;
   } else if (type === "1") {
     bgUrl.value = "https://api.dujin.org/bing/1920.php";
   } else if (type === "2") {
