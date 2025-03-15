@@ -30,7 +30,7 @@
     "@vicons/utils": "^0.1.4",
     "@vitejs/plugin-vue": "^4.6.2",
     "eslint": "^9.22.0",
-    "eslint-plugin-vue": "^9.22.0",
+    "eslint-plugin-vue": "^10.0.0",
     "prettier": "^3.2.5",
     "sass": "^1.71.1",
     "terser": "^5.29.1",
