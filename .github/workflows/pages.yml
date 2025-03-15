@@ -2,6 +2,7 @@ name: Pages
 
 on:
   push:
+  workflow_dispatch:
     branches:
       - main # default branch
 
