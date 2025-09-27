@@ -24,27 +24,27 @@ export interface City {
   country: string;
   district?: string;
   ip: string;
-  isp: string;
+  isp?: string;  
   province?: string;
 }
 
 // 天气信息接口
 export interface Weather {
-  cloud: string;
-  dew: string;
-  feelsLike: string;
+  cloud?: string;      
+  dew?: string;        
+  feelsLike?: string;  
   humidity: string;
   icon: string;
-  obsTime: string;
-  precip: string;
-  pressure: string;
+  obsTime?: string;  
+  precip?: string;     
+  pressure?: string;   
   temp: string;
   text: string;
-  vis: string;
-  wind360: string;
+  vis?: string;        
+  wind360?: string;    
   windDir: string;
   windScale: string;
-  windSpeed: string;
+  windSpeed?: string;  
 }
 
 export enum Unloaded {
