@@ -24,7 +24,7 @@ const PMToCH = {
 };
 const isOpen = ref(false);
 const playlist = ref<any[]>([]);
-const currentUrl = ref<string | null>(null); // 用 URL 替代 name
+const currentUrl = ref<string | null>(null);
 const currentIndex = ref(0);
 const isPlaying = ref(false);
 const audioRef = ref<HTMLAudioElement | null>(null);
@@ -38,8 +38,9 @@ const circumference = 2 * Math.PI * radius;
 
 const trackRefs = ref<HTMLElement[]>([]);
 
-const playlistId = config.playlistIdWyy;
+
 const metingApi = `${config.metingApiBase}/?type=playlist&id=${playlistId}`;
+const playlistId = config.playlistIdWyy;
 
 const progressPercent = computed(() => {
   if (!duration.value || !isFinite(duration.value) || duration.value === 0)
