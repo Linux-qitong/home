@@ -3,37 +3,13 @@ import { ref, onMounted, onUnmounted, computed } from "vue";
 import { config } from "../config";
 import { Icon } from "@iconify/vue";
 import type { City, Weather, WeatherAPIResponse } from "../interfaces/weather";
-import { Municipality, Unloaded, wiMapping } from "../interfaces/weather";
+import { Municipality, Unloaded, wiMapping, getWeatherIconCode } from "../interfaces/weather"; // 添加导入
 
 const city = ref<City | Unloaded>(Unloaded.Loading);
 const weatherNow = ref<Weather | Unloaded>(Unloaded.Loading);
 const time = ref<string>("07:21");
 const date = ref<string>("1919-08-10");
 const loading = ref(false);
-
-function getWeatherIconCode(weatherType: string): string {
-  const weatherMap: Record<string, string> = {
-    '晴天': '100',
-    '多云': '101', 
-    '阴': '102',
-    '小雨': '305',
-    '中雨': '306',
-    '大雨': '307',
-    '小雪': '400',
-    '中雪': '401',
-    '大雪': '402',
-    '雾': '500',
-    '霾': '504'
-  };
-  
-  for (const [key, value] of Object.entries(weatherMap)) {
-    if (weatherType.includes(key)) {
-      return value;
-    }
-  }
-  
-  return '999';
-}
 
 function dayProgress() {
   const now = new Date();
