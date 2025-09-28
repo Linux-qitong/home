@@ -3,7 +3,7 @@ import { ref, onMounted, onUnmounted, computed } from "vue";
 import { config } from "../config";
 import { Icon } from "@iconify/vue";
 import type { City, Weather, WeatherAPIResponse } from "../interfaces/weather";
-import { Municipality, Unloaded, wiMapping, getWeatherIconCode } from "../interfaces/weather"; // 添加导入
+import { Municipality, Unloaded, wiMapping, getWeatherIconCode } from "../interfaces/weather"; 
 
 const city = ref<City | Unloaded>(Unloaded.Loading);
 const weatherNow = ref<Weather | Unloaded>(Unloaded.Loading);
