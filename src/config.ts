@@ -66,6 +66,7 @@ export const config:Config = {
     ],
     weatherAPI: "https://api.nsmao.net/api/weather/query",
     weatherAPIKey: "ndHd1NJdhU6NaYzmlWsM441pKF",
+    metingApiBase: "https://meting.qjqq.cn",
     playlistIdWyy: "7039487815"
 }
 export interface Link {
@@ -87,5 +88,6 @@ export interface Config {
     darkBackgrounds: string[];
     weatherAPI: string;
     weatherAPIKey: string;
+    metingApiBase: string;
     playlistIdWyy: string;
 }
