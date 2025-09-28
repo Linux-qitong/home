@@ -1,6 +1,5 @@
 export const Municipality = ["北京", "上海", "天津", "重庆", "香港", "澳门", "台湾"];
 
-// 保留现有的天气图标映射
 export const wiMapping: Record<string, string> = {
   '100': 'wi:day-sunny',          // 晴
   '150': 'wi:night-clear',        // 晴（夜间）
@@ -18,7 +17,6 @@ export const wiMapping: Record<string, string> = {
   '999': 'wi:na'                  // 未知
 };
 
-// 城市信息接口
 export interface City {
   city?: string;
   country: string;
@@ -27,7 +25,6 @@ export interface City {
   province?: string;
 }
 
-// 天气信息接口
 export interface Weather {
   humidity: string;
   icon: string;
@@ -42,9 +39,7 @@ export enum Unloaded {
   Error,
 }
 
-// 天气类型映射函数
 export function getWeatherIconCode(weatherType: string): string {
-  // 简化的天气类型映射
   const weatherMap: Record<string, string> = {
     '晴': '100',
     '多云': '101', 
@@ -61,18 +56,15 @@ export function getWeatherIconCode(weatherType: string): string {
     '霾': '504'
   };
   
-  // 遍历映射表，查找匹配的天气类型
   for (const [key, value] of Object.entries(weatherMap)) {
     if (weatherType.includes(key)) {
       return value;
     }
   }
-  
-  // 默认返回晴天图标
+
   return '100';
 }
 
-// 天气API响应接口
 export interface WeatherAPIResponse {
   code: number;
   msg: string;
