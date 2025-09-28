@@ -39,7 +39,8 @@ const circumference = 2 * Math.PI * radius;
 const trackRefs = ref<HTMLElement[]>([]);
 
 const playlistId = config.playlistIdWyy;
-const metingApi = `https://meting.qjqq.cn/?type=playlist&id=${playlistId}`;
+const metingApi = `${config.metingApiBase}/?type=playlist&id=${playlistId}`;
+const playlistId = config.playlistIdWyy;
 
 const progressPercent = computed(() => {
   if (!duration.value || !isFinite(duration.value) || duration.value === 0)
