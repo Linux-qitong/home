@@ -138,6 +138,7 @@ function refreshWeather() {
     .then((data: WeatherAPIResponse) => {
       console.log('天气API响应数据:', data);
       
+      // 在refreshWeather函数中
       if (data.code === 200 && data.data) {
         city.value = {
           country: "中国",
@@ -155,7 +156,18 @@ function refreshWeather() {
           windDir: data.data.wind_direction || '',
           windScale: data.data.wind_power || ''
         };
-      } else {
+      }
+      
+      weatherNow.value = {
+        humidity: data.data.humidity.toString(),
+        icon: getWeatherIconCode(data.data.weather),
+        temp: data.data.temperature.toString(),
+        text: data.data.weather || '未知',
+        windDir: data.data.wind_direction || '',
+        windScale: data.data.wind_power || ''
+      };
+    }
+      else {
         console.error('天气数据错误:', data.msg || '未知错误');
         city.value = Unloaded.Error;
         weatherNow.value = Unloaded.Error;
