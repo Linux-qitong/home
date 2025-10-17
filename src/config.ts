@@ -1,6 +1,6 @@
 export const config:Config = {
-    title: "青稚の主页",
-    author: "青稚",
+    title: "逻各斯主页",
+    author: "逻各斯",
     avatar: "/images/avatar.webp",
     description: "The harder you work, the luckier you get.",
     links: [
