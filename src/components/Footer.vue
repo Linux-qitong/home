@@ -23,7 +23,7 @@ onMounted(() => {
   <footer class="footer" ref="footerRef">
     <span class="footer__line">
       Modified ❤️ by
-      <a href="https://github.com/Linux-qitong" target="_blank">逻各斯</a> & <a href="https://icp.gov.moe/?keyword=20249989" target="_blank">萌ICP备20249989号</a>
+      <a href="https://github.com/Linux-qitong" target="_blank">栖童</a> & <a href="https://icp.gov.moe/?keyword=20249989" target="_blank">萌ICP备20249989号</a>
     </span>
     <span class="footer__line">
     </span>
